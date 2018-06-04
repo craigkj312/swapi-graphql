@@ -122,6 +122,8 @@ const rootType = new GraphQLObjectType({
     starship: rootFieldByID('starshipID', 'starships'),
     allVehicles: rootConnection('Vehicles', 'vehicles'),
     vehicle: rootFieldByID('vehicleID', 'vehicles'),
+    allViewers: rootConnection('Viewers', 'viewers'),
+    viewer: rootFieldByID('viewerID', 'viewers'),
     node: nodeField,
   }),
 });
